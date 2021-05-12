@@ -1,12 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>github</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examen 3 CSS Joaquin Olivera</title>
+  <link rel="stylesheet" href="Nombre.css">
 </head>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  .outer-col-1 {
+    background: #D7E8D4;
+    flex: 1;
+  }
+  .outer-col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .inner-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .inner-col {
+    flex: 4;
+  }
+  .inner-row article {
+    min-height: 60vh;
+  }
+  .inner-row aside {
+    background: beige;
+    flex: 1;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+</style>
 <body>
-    hola matias soy Joaquin Olivera
+  <nav class="outer-col-1">Iniciación Javascript
+  <ul>
+    <li>Javascript</li>
+    <li>Iniciación a Meteor</li>
+    <li>Iniciación a React</li>
+    <li>CSS + Boostrap</li>
+    <li>jQuery + Query mobile</li>
+    <li>Apis de Google</li>
+  </ul>
+</nav>
+  <div class="outer-col-2">
+  	<header>Cursos de programación</header>
+    <div class="inner-row">
+      <div class="inner-col">
+    	<article>Informática 2018
+        <ul>
+          <p>Cursos trimestrales para conocer todas las herramientas destinadas a la programación web y las aplicaciones móviles con HTML5.</p>
+          <img src="libroexamen3.jpg" alt="Trulli" width="500" height="333">
+        </ul>
+      </article>
+  		<footer>Footer</footer>
+      </div>
+    	<aside>
+        <ul>
+          <p>¿Qué es?</p>
+          <p>Cursos para convertirse en profesionales de la informática web.</p>
+          <p>¿Como?</p>
+          <p>Con mucha facilidad para empezar y en cursos trimestrales a elegir.</p>
+          <p>¿Precio?</p>
+        </ul>
+      </aside>
+    </div>
+  </div>
 </body>
 </html>
